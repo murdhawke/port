@@ -4,7 +4,7 @@
       <template #brand centered="true">
           <router-link to="/">𝔸ℂ</router-link>
       </template>
-      <template #start>
+      <template #end>
             <b-navbar-item tag="div">
                 <div class="pages">
                  <router-link to="/resume">Resume</router-link>
@@ -41,7 +41,6 @@ Nav {
   text-decoration: none;
   color: white;
 }
-
 .pages a {
   margin-right: 50px;
   color: white;

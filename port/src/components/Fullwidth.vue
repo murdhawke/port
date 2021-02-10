@@ -31,7 +31,6 @@ export default {
     padding-left: 100px;
     padding-right: 100px;
     background-image: url('../assets/Hydrogen.jpg');
-    border-bottom: groove;
 }
 .main-txt {
     display: block;
