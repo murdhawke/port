@@ -33,6 +33,8 @@ export default {
 <style>
 #home {
   margin-top: 50px;
+  min-width: 100vh;
+  max-width: 100%;
 }
 .about {
   padding-bottom: 100px;

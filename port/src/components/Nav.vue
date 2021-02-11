@@ -1,6 +1,6 @@
 <template>
 <div id="nav">
-    <b-navbar fixed-top="true" centered="true">
+    <b-navbar fixed-top="true">
       <template #brand centered="true">
           <router-link to="/">𝔸ℂ</router-link>
       </template>
@@ -28,7 +28,7 @@ export default {
 
 <style>
 Nav { 
-  padding-top: 30px;
+  padding-top: 25px;
   padding-left:50px;
   padding-right: 50px;
   font-size: 20px;
@@ -49,5 +49,8 @@ Nav {
 a {
   text-decoration: none;
 
+}
+.navbar-menu.is-active {
+  background-image: url('../assets/Hydrogen.jpg');
 }
 </style>

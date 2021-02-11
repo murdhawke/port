@@ -6,8 +6,7 @@ import Buefy from 'buefy'
 import VueMq from 'vue-mq'
 
 //import css
-import 'buefy/dist/buefy.css'
-
+import '../src/buefy.scss'
 
 Vue.config.productionTip = false
 Vue.use(Buefy)
