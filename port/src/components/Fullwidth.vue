@@ -1,7 +1,7 @@
 <template>
     <div id="fullwidth">
         <div class="fullcontainer">
-            <div class="columns is-mobile">
+            <div class="columns ">
                 <div class="column is-5">
                     <figure class="image is-256x256">
                         <img src="../assets/hello.svg">
@@ -11,12 +11,6 @@
                     <h2 class="title">Hello 👋</h2>
                     <h2 class="title">I`m Amos Cheruiyot</h2>
                     <h4 class="subtitle">𝙸 𝚕𝚘𝚟𝚎 𝚎𝚟𝚎𝚛𝚢𝚝𝚑𝚒𝚗𝚐 𝚝𝚎𝚌𝚑</h4>
-                    <div class="container socials">
-                        <b-icon pack="fas" icon="github" size="is-large"></b-icon>
-                        <b-icon pack="fas" icon="linkedin" size="is-large"></b-icon>
-                        <b-icon pack="fas" icon="codepen" size="is-large"></b-icon>
-                        <b-icon pack="fab" icon="stack-overflow" size="is-large"></b-icon>
-                    </div>
                 </div>
             </div>
         </div>

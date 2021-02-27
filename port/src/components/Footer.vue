@@ -11,9 +11,8 @@
                 </div>
                 <div class="column">
                     <ul>
-                       <li>Amos</li>
-                       <li>Amos</li>
-                       <li>Amos</li>
+                       <li>Resume</li>
+                       <li>Posts</li>
                    </ul>
                 </div>
             </div>

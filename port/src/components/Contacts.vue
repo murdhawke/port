@@ -2,18 +2,19 @@
     <div id="contacts">
         <h3 class="section-title">Contact</h3>
         <div class="columns is-mobile contact-section">
-            <div class="column is-5 contacts-form" >
+            <form class="column is-5 contact-form">
                 <h4 class="subtitle-sm">Feel free to reach out to me!</h4>
                     <b-field>
-                        <b-input  placeholder="Name" type="text" ></b-input>
+                        <b-input  placeholder="Name" type="text"  ></b-input>
                     </b-field>
                     <b-field>
                         <b-input  placeholder="Email" type="email" ></b-input>
                     </b-field>
                     <b-field class="long-txt">
-                        <b-input  placeholder="Message" type="textarea" ></b-input>
+                        <b-input  placeholder="Message" type="textarea"  ></b-input>
                     </b-field>
-            </div>
+                    <b-button type="is-info submit"  outlined>Send</b-button>
+            </form>
             <div class="column is-7">
                 <figure class="contacts-img">
                    <img src="../assets/contact-us.svg" alt="Contact Us">
@@ -24,8 +25,13 @@
 </template>
 
 <script>
+
 export default {
-    
+    data() {
+        return {
+            
+            }
+        }
 }
 </script>
 
@@ -42,7 +48,7 @@ export default {
 .contacts-img {
     margin-right: 100px;
 }
-.contacts-form {
+.contact-form {
    margin-left: 50px;
    margin-right: 30px;
 }

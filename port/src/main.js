@@ -4,6 +4,8 @@ import router from './router'
 import store from './store'
 import Buefy from 'buefy'
 import VueMq from 'vue-mq'
+import{ init } from 'emailjs-com';
+init("user_kwLzyUFghQ3pIDDYy8b1c");
 
 //import css
 import '../src/buefy.scss'

@@ -2,7 +2,7 @@
   <div id="home">
     <Fullwidth></Fullwidth>
     <div class="about">
-      <div class="column is-half is-offset-3">
+      <div class="column is-mobile is-half is-offset-3">
           <h3 class="section-title">About Me</h3>
           <p class="aboutme">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
