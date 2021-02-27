@@ -35,8 +35,8 @@ export default {
     min-width: 100vw;
     max-width: 100vw;
     min-width: 100%;
-    min-height: 25vh;
-    max-height: 40vh;
+    min-height: 10vh;
+    max-height: 10vh;
     color: white;
 }
 .footer-columns {

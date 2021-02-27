@@ -1,19 +1,19 @@
 <template>
     <div id="contacts">
         <h3 class="section-title">Contact</h3>
-        <div class="columns is-mobile contact-section">
-            <form class="column is-5 contact-form">
+        <div class="columns is-mobile contact-section" >
+            <form class="column is-5 contact-form" @submit.prevent="sendEmail">
                 <h4 class="subtitle-sm">Feel free to reach out to me!</h4>
-                    <b-field>
-                        <b-input  placeholder="Name" type="text"  ></b-input>
+                    <b-field >
+                        <b-input  placeholder="Name" type="text" name="name" required ></b-input>
                     </b-field>
-                    <b-field>
-                        <b-input  placeholder="Email" type="email" ></b-input>
+                    <b-field >
+                        <b-input  placeholder="Email" type="email" name="email"  required></b-input>
                     </b-field>
-                    <b-field class="long-txt">
-                        <b-input  placeholder="Message" type="textarea"  ></b-input>
+                    <b-field class="long-txt" >
+                        <b-input maxlength="280" has-counter required  placeholder="Message" type="textarea" name="message" ></b-input>
                     </b-field>
-                    <b-button type="is-info submit"  outlined>Send</b-button>
+                    <button class="button is-info">Send</button>
             </form>
             <div class="column is-7">
                 <figure class="contacts-img">
@@ -25,13 +25,33 @@
 </template>
 
 <script>
-
+import emailjs from 'emailjs-com'
+import{ init } from 'emailjs-com';
+init("user_kwLzyUFghQ3pIDDYy8b1c");
 export default {
     data() {
         return {
-            
-            }
+
         }
+    },
+    methods: {
+        success:() => {
+            this.$toast.open({
+                message: 'Message Sent!!',
+                type:'is-success'
+            })
+        },
+        sendEmail:(e) => {
+            emailjs.sendForm('murdhawke_dev', 'murdhawke_receive', e.target, 'user_kwLzyUFghQ3pIDDYy8b1c')
+            .then((result) => {
+                console.log('SUCCESS!', result.status, result.text)
+
+            }, 
+            (error) => {
+                console.log('FAILED...', error);
+        })
+    }
+    }
 }
 </script>
 
@@ -65,7 +85,12 @@ h4.subtitle-sm {
     
 }
 .textarea:not([rows]) {
-    max-height: 40em;
+    max-height: 13em;
     min-height: 13em;
+    resize: none;
+}
+#sent-toast {
+    margin-top:2px;
+    margin-bottom: 2px;
 }
 </style>
