@@ -1,21 +1,6 @@
 <template>
     <div id="footer">
         <div class="footer-section">
-            <div class="columns footer-columns">
-                <div class="column ">
-                    <ul>
-                       <li>Github</li>
-                       <li>Codepen</li>
-                       <li>Stack Overflow</li>
-                   </ul>
-                </div>
-                <div class="column">
-                    <ul>
-                       <li>Resume</li>
-                       <li>Posts</li>
-                   </ul>
-                </div>
-            </div>
             <div class="columns copyright">
                 <p><i>&copy; 𝟚𝟘𝟚𝟙 𝔸𝕞𝕠𝕤 ℂ𝕙𝕖𝕣𝕦𝕚𝕪𝕠𝕥</i></p> 
             </div>
@@ -35,8 +20,8 @@ export default {
     min-width: 100vw;
     max-width: 100vw;
     min-width: 100%;
-    min-height: 10vh;
-    max-height: 10vh;
+    min-height: 8vh;
+    max-height: 8vh;
     color: white;
 }
 .footer-columns {

@@ -13,7 +13,7 @@
                     <b-field class="long-txt" >
                         <b-input maxlength="280" has-counter required  placeholder="Message" type="textarea" name="message" ></b-input>
                     </b-field>
-                    <button class="button is-info">Send</button>
+                    <button label="Lauch toast (default)" size="is-medium" @click="showSuccess()" class="button is-info">Send</button>
             </form>
             <div class="column is-7">
                 <figure class="contacts-img">
@@ -26,31 +26,27 @@
 
 <script>
 import emailjs from 'emailjs-com'
-import{ init } from 'emailjs-com';
-init("user_kwLzyUFghQ3pIDDYy8b1c");
+import{ init } from 'emailjs-com'
+//import Toasted from 'vue-toasted'
+init("user_kwLzyUFghQ3pIDDYy8b1c")
 export default {
-    data() {
+    data: () => {
         return {
-
+            
         }
     },
     methods: {
-        success:() => {
-            this.$toast.open({
-                message: 'Message Sent!!',
-                type:'is-success'
-            })
-        },
         sendEmail:(e) => {
             emailjs.sendForm('murdhawke_dev', 'murdhawke_receive', e.target, 'user_kwLzyUFghQ3pIDDYy8b1c')
-            .then((result) => {
-                console.log('SUCCESS!', result.status, result.text)
-
-            }, 
-            (error) => {
-                console.log('FAILED...', error);
-        })
-    }
+            .then(() => {
+                               
+            }
+            )}
+    },
+    showSuccess() {
+        this.toasted.show(
+            'Message Sent!'
+        )
     }
 }
 </script>
