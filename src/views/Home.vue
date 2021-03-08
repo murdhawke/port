@@ -53,6 +53,7 @@ export default {
 }
 .about {
   padding-bottom: 50px;
+  background-color: #f5f5f5;
 
 }
 .section-title {
