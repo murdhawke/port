@@ -2,18 +2,22 @@
     <div id="projects">
         <h3 class="section-title">My work</h3>
         <div class="project-class">
-            <nx-card
-                v-for="proj in projList1" :key="proj"
-                :title="proj.name"
-                :description="proj.descr">
+            <nx-card v-for="proj in projList1" :key="proj">
+                <template slot="title">{{proj.name}}</template>
+                <template slot="image">
+                    <b-img :src="proj.imgurl"></b-img>
+                </template>
+                <template slot="description">{{proj.descr}}</template>
             </nx-card>
         </div>
         
         <div class="project-class2">
-            <nx-card
-                v-for="proj2 in projList2" :key="proj2"
-                :title="proj2.name"
-                :description="proj2.descr">
+            <nx-card v-for="proj in projList2" :key="proj">
+                <template slot="title">{{proj.name}}</template>
+                <template slot="image">
+                    <b-img :src="proj.imgurl"></b-img>
+                </template>
+                <template slot="description">{{proj.descr}}</template>
             </nx-card>
         </div>
     </div>
@@ -25,14 +29,14 @@ export default {
     data() {
         return {
             projList1: [
-                {id:1, "name":"Covidata", descr: 'This is project 1', imgurl:'src/assets/covidata-img.png'},
-                {id:2, "name":"Patafundi", descr: 'This is project 2', imgurl:'src/assets/patafundi-img.png'},
-                {id:3, "name":"Covidata", descr: 'This is project 3', imgurl:'src/assets/covidata-img.png'}
+                {id:1, "name":"Covidata", descr: 'This is project Covidata', imgurl:'../assets/covidata-img.png'},
+                {id:2, "name":"Patafundi", descr: 'This is project Patafundi', imgurl:'../assets/patafundi-img.png'},
+                {id:3, "name":"Farmika ", descr: 'This is project Farmika', imgurl:'../assets/covidata-img.png'}
             ],
             projList2: [
-                {id:1, "name":"Covidata", descr: 'This is project 1', imgurl:'src/assets/covidata-img.png'},
-                {id:2, "name":"Patafundi", descr: 'This is project 2', imgurl:'src/assets/patafundi-img.png'},
-                {id:3, "name":"Covidata", descr: 'This is project 3', imgurl:'src/assets/covidata-img.png'}
+                {id:1, "name":"Project 4", descr: 'This is project 4', imgurl:'../assets/covidata-img.png'},
+                {id:2, "name":"Project 5", descr: 'This is project 5', imgurl:'../assets/patafundi-img.png'},
+                {id:3, "name":"Project 6", descr: 'This is project 6', imgurl:'../assets/covidata-img.png'}
         ]
 
         }
@@ -70,4 +74,5 @@ export default {
     height: 300px;
     display: block;
 }
+
 </style>
