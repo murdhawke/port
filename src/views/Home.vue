@@ -2,18 +2,25 @@
   <div id="home">
     <Fullwidth></Fullwidth>
     <div class="about">
-      <div class="column is-mobile is-half is-offset-3">
-          <h3 class="section-title">About Me</h3>
-          <p class="aboutme">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five centuries, but also the leap into 
-            electronic typesetting, remaining essentially unchanged. It was popularised in 
-            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-            and more recently with desktop publishing software like Aldus PageMaker including 
-            versions of Lorem Ipsum.
-          </p>
+      <h3 class="section-title">About Me</h3>
+      <div class="column is-mobile is-two-thirds is-offset-1">
+          <div class="about-me">
+              <div class="column">
+                <p class="aboutme">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                  when an unknown printer took a galley of type and scrambled it to make a type 
+                  specimen book. It has survived not only five centuries, but also the leap into 
+                  electronic typesetting, remaining essentially unchanged. It was popularised in 
+                  the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                  and more recently with desktop publishing software like Aldus PageMaker including 
+                  versions of Lorem Ipsum.
+                </p>
+              </div>
+              <div class="prof-pic">
+                  <b-image  class="prof-pic column" rounded=true :src="prof.imgurl" aria-placeholder="Amos Cheruiyot" ratio="1by1"></b-image>
+              </div>
+          </div>
       </div>
     </div>
     <Projects></Projects>
@@ -26,7 +33,15 @@ import Fullwidth from '../components/Fullwidth'
 import Projects from '../components/Projects'
 import Contacts from '../components/Contacts'
 export default {
-  components: {Fullwidth, Projects, Contacts}
+  components: {Fullwidth, Projects, Contacts},
+  data () {
+    return {
+      prof: {
+        placeholder: 'Amos Cheruiyot',
+        imgurl: require('../assets/amos.png')
+      }
+    }
+  }
 }
 </script>
 
@@ -49,7 +64,17 @@ export default {
   text-align: center;
 }
 .aboutme {
-  text-align: justify;
   line-height: 30px;
+  text-align: left;
+}
+.about-me {
+  display: inline-flex;
+  width: 100%;
+}
+.prof-pic{
+  height: 200px;
+  width: 200px;
+  padding-left: 120px;
+
 }
 </style>

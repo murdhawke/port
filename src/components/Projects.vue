@@ -25,7 +25,7 @@ export default {
             projList1: [
                 {id:1, "name":"Covidata", descr: 'Covidata is a small dashboard created in Vue.js + Vuesax  to show daily Covid-19 statistics.', imgurl:'../assets/covidata-img.png'},
                 {id:2, "name":"Patafundi", descr: 'Patafundi is a work-in-progress project.', imgurl:'../assets/patafundi-img.png'},
-                {id:3, "name":"Farmika ", descr: 'This is project Farmika', imgurl:'../assets/covidata-img.png'}
+                {id:3, "name":"Farmika ", descr: 'Farmika is a work-in-progress project.', imgurl:'../assets/covidata-img.png'}
             ],
             projList2: [
                 {id:1, "name":"Project 4", descr: 'This is project 4', imgurl:'../assets/covidata-img.png'},
