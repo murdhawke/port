@@ -27,7 +27,7 @@
 <script>
 import emailjs from 'emailjs-com'
 import{ init } from 'emailjs-com'
-//import Toasted from 'vue-toasted'
+import { SnackbarProgrammatic as Snackbar } from 'buefy'
 init("user_kwLzyUFghQ3pIDDYy8b1c")
 export default {
     data: () => {
@@ -38,16 +38,31 @@ export default {
     methods: {
         sendEmail:(e) => {
             emailjs.sendForm('murdhawke_dev', 'murdhawke_receive', e.target, 'user_kwLzyUFghQ3pIDDYy8b1c')
-            .then(() => {
-                               
-            }
-            )}
+            .then((response) => {
+                  var sendState =  response.status
+                  if (sendState == 200) {
+                  Snackbar.open({
+                    message: 'Message Sent!!',
+                    type: 'is-success',
+                    position: 'is-top-left',
+                    actionText:'OK',
+                    onAction: () => {
+                        this.sendEmail()
+                    }
+                  })
+                  }
+                  else {
+                      Snackbar.open({
+                        message: 'Failed to send',
+                        type: 'is-danger',
+                        position: 'is-top-left',
+                        actionText:'Retry'
+                  })
+                  }
+        }
+            )
     },
-    showSuccess() {
-        this.toasted.show(
-            'Message Sent!'
-        )
-    }
+}
 }
 </script>
 

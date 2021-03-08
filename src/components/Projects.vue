@@ -4,9 +4,6 @@
         <div class="project-class">
             <nx-card v-for="proj in projList1" :key="proj">
                 <template slot="title">{{proj.name}}</template>
-                <template slot="image">
-                    <b-img :src="proj.imgurl"></b-img>
-                </template>
                 <template slot="description">{{proj.descr}}</template>
             </nx-card>
         </div>
@@ -14,9 +11,6 @@
         <div class="project-class2">
             <nx-card v-for="proj in projList2" :key="proj">
                 <template slot="title">{{proj.name}}</template>
-                <template slot="image">
-                    <b-img :src="proj.imgurl"></b-img>
-                </template>
                 <template slot="description">{{proj.descr}}</template>
             </nx-card>
         </div>
@@ -29,8 +23,8 @@ export default {
     data() {
         return {
             projList1: [
-                {id:1, "name":"Covidata", descr: 'This is project Covidata', imgurl:'../assets/covidata-img.png'},
-                {id:2, "name":"Patafundi", descr: 'This is project Patafundi', imgurl:'../assets/patafundi-img.png'},
+                {id:1, "name":"Covidata", descr: 'Covidata is a small dashboard created in Vue.js + Vuesax  to show daily Covid-19 statistics.', imgurl:'../assets/covidata-img.png'},
+                {id:2, "name":"Patafundi", descr: 'Patafundi is a work-in-progress project.', imgurl:'../assets/patafundi-img.png'},
                 {id:3, "name":"Farmika ", descr: 'This is project Farmika', imgurl:'../assets/covidata-img.png'}
             ],
             projList2: [
@@ -74,5 +68,4 @@ export default {
     height: 300px;
     display: block;
 }
-
 </style>
