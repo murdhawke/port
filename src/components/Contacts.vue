@@ -45,10 +45,7 @@ export default {
                     message: 'Message Sent!!',
                     type: 'is-success',
                     position: 'is-top-left',
-                    actionText:'OK',
-                    onAction: () => {
-                        this.sendEmail()
-                    }
+                    actionText:'OK'                    
                   })
                   }
                   else {
@@ -56,7 +53,10 @@ export default {
                         message: 'Failed to send',
                         type: 'is-danger',
                         position: 'is-top-left',
-                        actionText:'Retry'
+                        actionText:'Retry',
+                        onAction: () => {
+                        this.sendEmail()
+                    }
                   })
                   }
         }

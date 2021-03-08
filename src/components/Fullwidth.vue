@@ -25,9 +25,8 @@ export default {
 
 <style>
 .fullcontainer {
-    min-height: 89vh;
-    max-height: 89vh;
-    padding-top: 50px;
+    min-height: 90vh;
+    max-height: 90vh;
     padding-left: 100px;
     padding-right: 100px;
     background-image: url('../assets/Hydrogen.jpg');
@@ -37,6 +36,7 @@ export default {
     margin-left: auto;
     margin-right: auto;
     margin-top: 12%;
+    
 }
 .title {
      color: white;
@@ -51,7 +51,12 @@ export default {
     letter-spacing: 2px;
     font-weight: 600;
     word-spacing: 15px;
+    
 }
+.title, .subtitle{
+text-shadow: 7px 4px 5px rgba(0,0,0,0.44);
+}
+
 .socials { 
     display: block;
 }

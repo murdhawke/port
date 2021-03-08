@@ -37,13 +37,15 @@ export default {
   max-width: 100%;
 }
 .about {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+
 }
 .section-title {
   font-size: 36px;
   color: #535460;
   font-weight: 500;
-  padding: 40px;
+  padding: 20px;
+
   text-align: center;
 }
 .aboutme {

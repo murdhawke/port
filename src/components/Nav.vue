@@ -7,8 +7,8 @@
       <template #end>
             <b-navbar-item tag="div">
                 <div class="pages">
-                 <router-link to="/resume">Resume</router-link>
-                 <router-link to="/posts">Posts</router-link>
+                  <router-link to="/resume">Resume</router-link>
+                  <router-link to="/posts">Posts</router-link>
                 </div>
             </b-navbar-item>
         </template>
@@ -28,11 +28,11 @@ export default {
 
 <style>
 Nav { 
-  padding-top: 25px;
+  padding-top: 30px;
   padding-left:50px;
   padding-right: 50px;
   font-size: 20px;
-  padding-bottom: 20px;
+  
   background-image: url('../assets/Hydrogen.jpg');
 }
 .navbar-brand a {

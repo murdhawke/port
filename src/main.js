@@ -3,7 +3,6 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import Buefy from 'buefy'
-import Toasted from 'vue-toasted'
 import  NxCard from 'nx-card'
 
 
@@ -14,7 +13,6 @@ import '../src/buefy.scss'
 
 Vue.config.productionTip = false
 Vue.use(Buefy)
-Vue.use(Toasted)
 Vue.use(NxCard)
 
 new Vue({
