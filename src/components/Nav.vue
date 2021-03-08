@@ -28,15 +28,16 @@ export default {
 
 <style>
 Nav { 
-  padding-top: 30px;
+  height:90px ;
   padding-left:50px;
   padding-right: 50px;
   font-size: 20px;
-  
+  vertical-align: middle;
   background-image: url('../assets/Hydrogen.jpg');
 }
 .navbar-brand a {
   font-size: 40px;
+  padding-top: 10px;
   margin-left: 50px;
   text-decoration: none;
   color: white;

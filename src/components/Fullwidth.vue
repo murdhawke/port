@@ -10,7 +10,13 @@
                 <div class="column is-7 main-txt">
                     <h2 class="title">Hello 👋</h2>
                     <h2 class="title">I`m Amos Cheruiyot</h2>
-                    <h4 class="subtitle">𝙸 𝚕𝚘𝚟𝚎 𝚎𝚟𝚎𝚛𝚢𝚝𝚑𝚒𝚗𝚐 𝚝𝚎𝚌𝚑</h4>
+                    <h3 class="subtitle">I love everything tech</h3>
+                    <ul class="socials">
+                        <li class="socials-item"><i class="fab fa-github fa-2x"></i></li>
+                        <li class="socials-item"><i class="fab fa-linkedin-in fa-2x"></i></li>
+                        <li class="socials-item"><i class="fab fa-codepen fa-2x"></i></li>
+                        <li class="socials-item"><i class="fab fa-linkedin-in fa-2x"></i></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -37,6 +43,7 @@ export default {
     margin-right: auto;
     margin-top: 12%;
     
+    
 }
 .title {
      color: white;
@@ -53,11 +60,20 @@ export default {
     word-spacing: 15px;
     
 }
-.title, .subtitle{
+.title, .subtitle {
 text-shadow: 7px 4px 5px rgba(0,0,0,0.44);
+font-family: 'Indie Flower', cursive;
+letter-spacing: 5px;
 }
 
 .socials { 
-    display: block;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 23%;
+    margin-right: 23%;
+    right: 20%;
+}
+.socials-item{
+    padding-left: 50px;
 }
 </style>

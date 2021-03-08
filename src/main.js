@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import Buefy from 'buefy'
 import  NxCard from 'nx-card'
+import '@fortawesome/fontawesome-free'
 
 
 
