@@ -12,10 +12,10 @@
                     <h2 class="title">I`m Amos Cheruiyot</h2>
                     <h3 class="subtitle">I love everything tech</h3>
                     <ul class="socials">
-                        <li class="socials-item"><i class="fab fa-github fa-2x"></i></li>
-                        <li class="socials-item"><i class="fab fa-linkedin-in fa-2x"></i></li>
-                        <li class="socials-item"><i class="fab fa-codepen fa-2x"></i></li>
-                        <li class="socials-item"><i class="fab fa-linkedin-in fa-2x"></i></li>
+                        <li class="socials-item"><a href="https://github.com/murdhawke" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+                        <li class="socials-item"><a href="https://stackoverflow.com/users/5805468/amos-cheruiyot" target="_blank"><i class="fab fa-stack-overflow fa-2x"></i></a></li>
+                        <li class="socials-item"><a href="https://codepen.io/murdhawke" target="_blank"><i class="fab fa-codepen fa-2x"></i></a></li>
+                        <li class="socials-item"><a href="https://www.linkedin.com/in/murdhawke/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -52,7 +52,6 @@ export default {
 }
 .subtitle {
     padding-top: 30px;
-    font-style:italic ;
     color: white;
     text-align: center;
     letter-spacing: 2px;
@@ -70,9 +69,12 @@ letter-spacing: 5px;
     display: inline-flex;
     margin-top: 30px;
     margin-left: 30%;
-    right: 20%;
+    margin-right: 30%;
 }
 .socials-item{
     padding-left: 50px;
+}
+a {
+    color: inherit;
 }
 </style>
