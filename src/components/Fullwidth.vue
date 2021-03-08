@@ -67,10 +67,9 @@ letter-spacing: 5px;
 }
 
 .socials { 
-    display: flex;
+    display: inline-flex;
     margin-top: 30px;
-    margin-left: 23%;
-    margin-right: 23%;
+    margin-left: 30%;
     right: 20%;
 }
 .socials-item{
